@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Next Page</title> 
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            background-image: url('https://github.com/DzarelDeveloper/HappyGirlfriendDay/blob/main/Background.jpg?raw=true'); 
+            background-size: cover; 
+            background-position: center; 
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "top-left top-right"
+                "button button"
+                "bottom-left bottom-right"
+                ". bottom-text";
+            gap: 20px;
+            text-align: center;
+            position: relative; 
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+            max-width: 600px;
+            width: 90%;
+            margin: 20px;
+        }
+
+        .box {
+            width: 150px;
+            height: 200px;
+            border: 2px solid white;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .box img:hover {
+            transform: scale(1.05);
+        }
+
+        .box-top-left {
+            grid-area: top-left;
+        }
+
+        .box-bottom-right {
+            grid-area: bottom-right;
+        }
+
+        .text {
+            color: white;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        .text-top-right {
+            grid-area: top-right;
+        }
+
+        .text-bottom-left {
+            grid-area: bottom-left;
+        }
+
+        .text-bottom {
+            grid-area: bottom-text;
+            position: absolute;
+            bottom: 50px; 
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            padding: 10px; 
+            font-size: 12px; 
+            line-height: 1.4; 
+        }
+
+        .button {
+            grid-area: button;
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 18px;
+            color: #fff;
+            background: linear-gradient(45deg, #ff0066, #ff66cc);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0px 5px 15px rgba(255, 0, 102, 0.4);
+            margin: auto;
+        }
+
+        .button:hover {
+            background: linear-gradient(45deg, #ff66cc, #ff0066);
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(255, 0, 102, 0.6);
+        }
+    </style> 
+</head> 
+<body> 
+    <audio autoplay>
+        <source src="https://github.com/frhndevweb/Happy-Girlfriend-Day/blob/master/MyGirl.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="container"> 
+        <div class="box box-top-left"> 
+            <img src="https://github.com/frhndevweb/Happy-Girlfriend-Day/blob/master/IMG-20240729-WA0013.jpg?raw=true" alt="Image 1"> 
+        </div> 
+        <div class="text text-top-right">
+            Haii wanita cantik, wanita baik, wanita kuat, Selamat hari perempuan sedunia ya cantikku 
+        </div> 
+        <a href="https://api.whatsapp.com/send?phone=6288215660319&text=Terimakasih%20(isi%20pesan%20mu)" class="button">BALAS</a>
+        <div class="text text-bottom-left">
+            Semoga kita bisa lebih lama lagi bersamanya, kalau perlu sampai menua bersama wkwk, kalau kamu punya masalah bilang ke aku yaa kita lewati masalah kamu bareng" Okeyy Sayangg
+        </div> 
+        <div class="box box-bottom-right"> 
+            <img src="https://github.com/frhndevweb/Happy-Girlfriend-Day/blob/master/IMG-20240729-WA0009.jpg?raw=true" alt="Image 2"> 
+        </div> 
+        <div class="text text-bottom">
+            Selamat hari perempuan sedunia ya cantikku 
+        </div> 
+    </div> 
+</body>
+</html>
